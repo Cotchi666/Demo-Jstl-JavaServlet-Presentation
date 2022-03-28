@@ -27,14 +27,14 @@ public class JstlCoreEx extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		ArrayList<SinhVien> listSV = new ArrayList<SinhVien>();
-		listSV.add(new SinhVien(1,"Đoàn Phương Linh"));
-		listSV.add(new SinhVien(2, "Lưu Bị"));
-		listSV.add(new SinhVien(3, "Tào Tháo"));
-		listSV.add(new SinhVien(4, "Phú IT"));
+		listSV.add(new SinhVien(1,"Harry Marhai"));
+		listSV.add(new SinhVien(2, "Ronando"));
+		listSV.add(new SinhVien(3, "Messi"));
+		listSV.add(new SinhVien(4, "Chien Ne"));
 		
 		request.setCharacterEncoding("UTF-8");
 		request.setAttribute("studentlist", listSV);
-		request.getRequestDispatcher("jstl_core_example03.jsp").forward(request, response);
+		request.getRequestDispatcher("jstl_core_example01.jsp").forward(request, response);
 		
 	}
 
